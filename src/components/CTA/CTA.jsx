@@ -1,6 +1,6 @@
 const CTA = () => {
     return (
-        <></>
+        <button>Call to action</button>
     );
 };
 
