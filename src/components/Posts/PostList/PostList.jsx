@@ -1,5 +1,5 @@
 import { useState } from "react";
-import PostItem from "../PosItem/PosItem";
+import PostItem from "../PostItem/PostItem";
 
 const PostList = () => {
     const [posts, setPosts] = useState([

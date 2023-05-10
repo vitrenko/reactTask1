@@ -1,6 +1,26 @@
 .header {
-    display: flex;
-    padding: 40px;
-    justify-content: center;
-    background-color: aquamarine;
+    nav {
+        ul {
+            display: flex;
+            justify-content: space-around;
+            margin: 0;
+            padding: 0;
+            padding: 40px;
+            background-color: aquamarine;
+            list-style: none;
+            font: 700 20px/24px Arial, sans-serif;
+
+            li {
+                a {
+                    text-decoration: none;
+                    color:#fff;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+    
 }

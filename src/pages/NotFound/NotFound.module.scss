@@ -1,0 +1,10 @@
+.notFoundContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    
+    button {
+        width: 200px;
+        align-self: center;
+    }
+}
