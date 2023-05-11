@@ -20,14 +20,10 @@ const PostList = () => {
         }
     ]);
 
-    const showPosts = post => <PostItem postTitle={post.postTitle} postBody={post.postBody} />;
-
     return (
-        <div>
-            {
-                posts.forEach(post => showPosts(post))
-            }
-        </div>
+        <>
+            {posts.map(post => <PostItem key={post.postId} {...post} />)}
+        </>
     );
 };
 

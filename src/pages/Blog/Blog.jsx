@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import style from "./Blog.module.scss";
 
-const Home = () => {
+const Blog = () => {
     const [posts, setPosts] = useState([]);
 
     useEffect(() => {
@@ -19,14 +20,18 @@ const Home = () => {
 
     return (
         <>
-            <h1>Home</h1>
-            <ul>
+            <h1>Blog</h1>
+            <div className={style.postsContainer}>
                 {posts.map((post) => (
-                    <li key={post.id}>{post.body}</li>
+                    <div key={post.id} className={style.postWrap}>
+                        <h3>{post.title}</h3>
+                        <p>{post.body}</p>
+                        <a href={`https://jsonplaceholder.typicode.com/posts/${post.id}`}>Go to this post</a>
+                    </div>
                 ))}
-            </ul>
+            </div>
         </>
     )
 };
 
-export default Home;
+export default Blog;

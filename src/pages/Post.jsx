@@ -1,11 +1,3 @@
-import { useParams, useLocation } from "react-router-dom";
+import PostItem from "../components/Posts/PosItem/PostItem";
 
-export const Post = () => {
-    const { id } = useParams();
-    const location = useLocation();
-
-    console.log(id);
-    console.log(location);
-
-    return <div>Post</div>;
-};
+export const Post = () => <PostItem />;

@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-
 import NotFoundPic from "../../assets/images/not_found.png";
 import style from "./NotFound.module.scss";
 

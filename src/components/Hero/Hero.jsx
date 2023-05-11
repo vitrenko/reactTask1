@@ -1,7 +1,7 @@
-const Hero = () => {
+const Hero = ({src, width, alt}) => {
     return (
         <div>
-            <img src="../../src/assets/images/photo-1563991655280-cb95c90ca2fb.jpeg" />
+            <img src={src} width={width} alt={alt} />
         </div>
     );
 };
