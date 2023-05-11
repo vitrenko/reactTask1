@@ -1,14 +1,16 @@
 # reactTask1
 
-This is React task 1
+This is React task "My Blog"
 
 Here were used the following tools/approaches:
  - Vite,
  - React,
  - CSS modules (SCSS),
+ - axios,
  - pnpm.
  
 The idea is to create personal blog.
+Now it has navigation to different pages like "About", "Blog", "Contact".
  
 How to run this project for development:
   1. open terminal being in root project folder;
